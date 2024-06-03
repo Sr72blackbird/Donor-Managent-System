@@ -18,11 +18,11 @@ public class DatabaseManager {
                 + "phone TEXT"
                 + ");";
 
-        String createSchoolsTable = "CREATE TABLE IF NOT EXISTS schools ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + "name TEXT NOT NULL,"
-                + "address TEXT NOT NULL"
-                + ");";
+//        String createSchoolsTable = "CREATE TABLE IF NOT EXISTS schools ("
+//                + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+//                + "name TEXT NOT NULL,"
+//                + "address TEXT NOT NULL"
+//                + ");";
 
         String createStudentsTable = "CREATE TABLE IF NOT EXISTS students ("
                 + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -51,12 +51,12 @@ public class DatabaseManager {
 
         try (Connection conn = connect();
              PreparedStatement stmt1 = conn.prepareStatement(createDonorsTable);
-             PreparedStatement stmt2 = conn.prepareStatement(createSchoolsTable);
+//             PreparedStatement stmt2 = conn.prepareStatement(createSchoolsTable);
              PreparedStatement stmt3 = conn.prepareStatement(createStudentsTable);
              PreparedStatement stmt4 = conn.prepareStatement(createDonationsTable);
              PreparedStatement stmt5 = conn.prepareStatement(createDonationItemsTable)) {
             stmt1.execute();
-            stmt2.execute();
+//            stmt2.execute();
             stmt3.execute();
             stmt4.execute();
             stmt5.execute();

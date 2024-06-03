@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Created database and tables for the system">
-      <change afterPath="$PROJECT_DIR$/src/DatabaseManager.java" afterDir="false" />
+    <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Created backed class DatabaseManager.java to manage database Operations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -73,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717008498210</updated>
       <workItem from="1717008499410" duration="2836000" />
-      <workItem from="1717090219202" duration="6800000" />
+      <workItem from="1717090219202" duration="9496000" />
     </task>
     <task id="LOCAL-00001" summary="Created database and tables for the system">
       <option name="closed" value="true" />
@@ -83,7 +83,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717095227682</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created database and tables for the system">
+      <option name="closed" value="true" />
+      <created>1717097146428</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717097146429</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created backed class DatabaseManager.java to manage database Operations">
+      <option name="closed" value="true" />
+      <created>1717097261795</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717097261795</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created backed class DatabaseManager.java to manage database Operations">
+      <option name="closed" value="true" />
+      <created>1717097437640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717097437640</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +126,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created database and tables for the system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created database and tables for the system" />
+    <MESSAGE value="Created backed class DatabaseManager.java to manage database Operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created backed class DatabaseManager.java to manage database Operations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
