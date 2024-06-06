@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Created Main Dashboard Class  Donor">
-      <change afterPath="$PROJECT_DIR$/src/ManageDonationsForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ManageStudentsForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ManageDonorsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageDonorsForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +94,7 @@
       <updated>1717008498210</updated>
       <workItem from="1717008499410" duration="2836000" />
       <workItem from="1717090219202" duration="9496000" />
-      <workItem from="1717439642391" duration="5098000" />
+      <workItem from="1717439642391" duration="6029000" />
     </task>
     <task id="LOCAL-00001" summary="Created database and tables for the system">
       <option name="closed" value="true" />
@@ -150,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717441070753</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run">
+      <option name="closed" value="true" />
+      <created>1717557066440</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717557066440</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +173,8 @@
     <MESSAGE value="Created database and tables for the system" />
     <MESSAGE value="Created backed class DatabaseManager.java to manage database Operations" />
     <MESSAGE value="Created Main Dashboard Class  Donor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Main Dashboard Class  Donor" />
+    <MESSAGE value="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
