@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-233.11799.300">
+    <data-source name="DonationDB.sqlite" uuid="4fa5da79-414b-47c5-bafb-81774359601b">
+      <database-info product="SQLite" version="3.15.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" dbms="SQLITE" exact-version="3.15.1" exact-driver-version="1.1" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-provider>no-auth</auth-provider>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="main" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>

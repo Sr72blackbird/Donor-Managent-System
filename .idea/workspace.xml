@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run">
+      <change afterPath="$PROJECT_DIR$/src/Donor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donations Management System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Donations Management System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ManageDonorsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageDonorsForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +41,25 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.MainDashboard.executor": "Profiler#1",
+    "Application.MainDashboard.executor": "Run",
+    "Application.ManageDonorsForm.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/edwar/IdeaProjects/Donations Management System/sqlite-jdbc-3.15.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/edwar/IdeaProjects/Donations Management System/src/Main.java",
-    "settings.editor.selected.configurable": "SQL Dialects",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -62,10 +72,20 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\edwar\IdeaProjects\Donations Management System\src" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainDashboard">
     <configuration name="MainDashboard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainDashboard" />
+      <module name="Donations Management System" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManageDonorsForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ManageDonorsForm" />
       <module name="Donations Management System" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,6 +94,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainDashboard" />
+        <item itemvalue="Application.ManageDonorsForm" />
       </list>
     </recent_temporary>
   </component>
@@ -94,7 +115,17 @@
       <updated>1717008498210</updated>
       <workItem from="1717008499410" duration="2836000" />
       <workItem from="1717090219202" duration="9496000" />
-      <workItem from="1717439642391" duration="6029000" />
+      <workItem from="1717439642391" duration="10162000" />
+      <workItem from="1718132155034" duration="847000" />
+      <workItem from="1718358049506" duration="33000" />
+      <workItem from="1718712022191" duration="2796000" />
+      <workItem from="1718716871759" duration="1602000" />
+      <workItem from="1718718507698" duration="2002000" />
+      <workItem from="1718732504230" duration="4203000" />
+      <workItem from="1718991818065" duration="879000" />
+      <workItem from="1724775867568" duration="5851000" />
+      <workItem from="1725302268787" duration="4106000" />
+      <workItem from="1725649890325" duration="15359000" />
     </task>
     <task id="LOCAL-00001" summary="Created database and tables for the system">
       <option name="closed" value="true" />
@@ -152,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717557066440</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run">
+      <option name="closed" value="true" />
+      <created>1717691521425</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717691521425</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +222,11 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>12</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DatabaseManager.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

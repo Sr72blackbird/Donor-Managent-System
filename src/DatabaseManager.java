@@ -1,17 +1,22 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 import java.sql.SQLException;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class DatabaseManager {
 
-
+    // Connect to SQLite database
     private static final String URL = "jdbc:sqlite:C:/Users/edwar/IdeaProjects/Donations Management System/DonationDB.sqlite";
 
     public static Connection connect() throws SQLException {
         return DriverManager.getConnection(URL);
     }
+
 
     public static void createTables() throws SQLException {
         String createDonorsTable = "CREATE TABLE IF NOT EXISTS donors ("
@@ -65,6 +70,31 @@ public class DatabaseManager {
             stmt4.execute();
         }
     }
-
     // Methods for CRUD operations on donors, schools, students, donations, and donation items
+
+    // Fetch list of donors from the database
+    public static List<Donor> getDonors() {
+        List<Donor> donors = new ArrayList<>();
+        String sql = "SELECT id, name, email, phone FROM donors";
+
+        try (Connection conn = connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql);
+             ResultSet rs = pstmt.executeQuery()) {
+
+            // Loop through the result set and create Donor objects
+            while (rs.next()) {
+                donors.add(new Donor(
+                        rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("email"),
+                        rs.getString("phone")
+                ));
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return donors;
+    }
 }
+
