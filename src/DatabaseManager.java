@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -35,8 +36,8 @@ public class DatabaseManager {
         String createStudentsTable = "CREATE TABLE IF NOT EXISTS students ("
                 + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + "name TEXT NOT NULL,"
-                + "school_id INTEGER,"
-                + "grade TEXT NOT NULL"
+                + "admno TEXT NOT NULL ,"
+                + "course TEXT NOT NULL"
                 + ");";
 
         String createDonationsTable = "CREATE TABLE IF NOT EXISTS donations ("
@@ -48,13 +49,14 @@ public class DatabaseManager {
                 + ");";
 
         String createDonationItemsTable = "CREATE TABLE IF NOT EXISTS donation_items ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "item_id INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + "donation_id INTEGER,"
-                + "student_id INTEGER,"
-                + "item_description TEXT NOT NULL,"
+                + "student_id integer,"
+                + "item_name TEXT NOT NULL,"
                 + "quantity INTEGER NOT NULL,"
+                + "donation_date TEXT,"
                 + "FOREIGN KEY(donation_id) REFERENCES donations(id),"
-                + "FOREIGN KEY(student_id) REFERENCES students(admno)"
+                + "FOREIGN KEY(student_id) REFERENCES students(id)"
                 + ");";
 
         try (Connection conn = connect();
@@ -96,5 +98,10 @@ public class DatabaseManager {
         }
         return donors;
     }
-}
 
+
+
+
+
+
+}

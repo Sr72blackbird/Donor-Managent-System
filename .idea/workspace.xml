@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run">
-      <change afterPath="$PROJECT_DIR$/src/Donor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fa5da79-414b-47c5-bafb-81774359601b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4fa5da79-414b-47c5-bafb-81774359601b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations Management System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Donations Management System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DonationDB.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/DonationDB.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ManageDonorsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageDonorsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ManageStudentsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageStudentsForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ManageStudentsForm.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -43,6 +48,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.MainDashboard.executor": "Run",
     "Application.ManageDonorsForm.executor": "Run",
+    "Application.ManageStudentsForm.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -91,9 +97,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ManageStudentsForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ManageStudentsForm" />
+      <module name="Donations Management System" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainDashboard" />
+        <item itemvalue="Application.ManageStudentsForm" />
         <item itemvalue="Application.ManageDonorsForm" />
       </list>
     </recent_temporary>
@@ -125,7 +139,11 @@
       <workItem from="1718991818065" duration="879000" />
       <workItem from="1724775867568" duration="5851000" />
       <workItem from="1725302268787" duration="4106000" />
-      <workItem from="1725649890325" duration="15359000" />
+      <workItem from="1725649890325" duration="21163000" />
+      <workItem from="1726420918621" duration="67000" />
+      <workItem from="1726421004769" duration="1727000" />
+      <workItem from="1726465621109" duration="4318000" />
+      <workItem from="1726472008456" duration="10293000" />
     </task>
     <task id="LOCAL-00001" summary="Created database and tables for the system">
       <option name="closed" value="true" />
@@ -225,8 +243,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DatabaseManager.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="4" />
+          <line>11</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DatabaseManager.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ManageStudentsForm.java</url>
+          <line>216</line>
+          <properties class="ManageStudentsForm" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

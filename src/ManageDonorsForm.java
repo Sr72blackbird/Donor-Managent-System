@@ -29,6 +29,7 @@ public class ManageDonorsForm extends JFrame {
         JScrollPane scrollPane = new JScrollPane(donorsTable);
 
         // Buttons
+        addButton = new JButton("Add Donor");
         viewButton = new JButton("View Donors");
         updateButton = new JButton("Update Donor");
         deleteButton = new JButton("Delete Donor");
@@ -43,14 +44,18 @@ public class ManageDonorsForm extends JFrame {
         inputPanel.add(phoneField);
 
         // Panel for buttons and table
-        JPanel panel = new JPanel(new BorderLayout());
-        panel.add(inputPanel, BorderLayout.NORTH);
-        panel.add(viewButton, BorderLayout.WEST);
-        panel.add(updateButton, BorderLayout.CENTER);
-        panel.add(deleteButton, BorderLayout.EAST);
-        panel.add(scrollPane, BorderLayout.SOUTH);
+        JPanel panel = new JPanel();
+        panel.add(inputPanel);
+        panel.add(addButton);
+        panel.add(viewButton);
+        panel.add(updateButton);
+        panel.add(deleteButton);
+        panel.add(scrollPane);
 
         add(panel);
+
+        // Add Donor Button Listener{
+        addButton.addActionListener(e -> addDonor());
 
         // View Donors Button Listener
         viewButton.addActionListener(e -> loadDonors());
@@ -90,6 +95,25 @@ public class ManageDonorsForm extends JFrame {
         setVisible(true);
     }
 
+// Method to add donor into sql database
+    private void addDonor() {
+        String name = nameField.getText();
+        String email = emailField.getText();
+        String phone = phoneField.getText();
+
+        String sql = "INSERT INTO donors(name, email, phone) VALUES(?, ?, ?)";
+
+        try (Connection conn = DatabaseManager.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, name);
+            pstmt.setString(2, email);
+            pstmt.setString(3, phone);
+            pstmt.executeUpdate();
+            JOptionPane.showMessageDialog(this, "Donor added successfully");
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
+    }
     // Method to load all donors into the JTable
     private void loadDonors() {
         List<Donor> donors = DatabaseManager.getDonors();
