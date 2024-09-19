@@ -36,7 +36,7 @@ public class MainDashboard extends JFrame {
         JButton manageDonationsButton = new JButton("Manage Donations");
         manageDonationsButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new ManageDonationsForm();
+                new DonationItemsForm();
             }
         });
 
