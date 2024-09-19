@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run">
-      <change afterPath="$PROJECT_DIR$/src/DonationItemsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fa5da79-414b-47c5-bafb-81774359601b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4fa5da79-414b-47c5-bafb-81774359601b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DonationDB.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/DonationDB.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DonationItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DonationItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ManageDonationsForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DonationItemsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DonationItemsForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/DonationItemsForm.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ManageStudentsForm.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
@@ -42,38 +41,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.DonationItemsForm.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainDashboard.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ManageDonorsForm.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ManageStudentsForm.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/edwar/IdeaProjects/Donations Management System/sqlite-jdbc-3.15.1.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/edwar/IdeaProjects/Donations Management System/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.DonationItemsForm.executor": "Run",
+    "Application.MainDashboard.executor": "Run",
+    "Application.ManageDonorsForm.executor": "Run",
+    "Application.ManageStudentsForm.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/edwar/IdeaProjects/Donations Management System/sqlite-jdbc-3.15.1.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/edwar/IdeaProjects/Donations Management System/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -82,7 +81,7 @@
       <recent name="C:\Users\edwar\IdeaProjects\Donations Management System\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainDashboard">
+  <component name="RunManager" selected="Application.DonationItemsForm">
     <configuration name="DonationItemsForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DonationItemsForm" />
       <module name="Donations Management System" />
@@ -113,8 +112,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainDashboard" />
         <item itemvalue="Application.DonationItemsForm" />
+        <item itemvalue="Application.MainDashboard" />
         <item itemvalue="Application.ManageStudentsForm" />
         <item itemvalue="Application.ManageDonorsForm" />
       </list>
@@ -154,6 +153,8 @@
       <workItem from="1726472008456" duration="10293000" />
       <workItem from="1726490961715" duration="3392000" />
       <workItem from="1726510413054" duration="5521000" />
+      <workItem from="1726734244591" duration="2314000" />
+      <workItem from="1726736660056" duration="1188000" />
     </task>
     <task id="LOCAL-00001" summary="Created database and tables for the system">
       <option name="closed" value="true" />
@@ -260,6 +261,11 @@
           <url>file://$PROJECT_DIR$/src/DatabaseManager.java</url>
           <line>50</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DonationItemsForm.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ManageStudentsForm.java</url>

@@ -139,7 +139,7 @@ public class DonationItemsForm extends JFrame {
 
     // Method to Add a new Donation item
     public void addDonationItem(String itemName, int quantity, int donorId,  String donationDate) {
-        String sql = "INSERT INTO donation_items(item_name, quantity, donor_id, donation_date) VALUES(?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO donation_items(item_name, quantity, donor_id, donation_date) VALUES(?, ?, ?, ?)";
 
         try (Connection conn = DatabaseManager.connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
