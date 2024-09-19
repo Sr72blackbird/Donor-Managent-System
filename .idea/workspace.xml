@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run">
+      <change afterPath="$PROJECT_DIR$/src/IssuedItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fa5da79-414b-47c5-bafb-81774359601b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4fa5da79-414b-47c5-bafb-81774359601b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DonationItemsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DonationItemsForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Donor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Donor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DonationDB.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/DonationDB.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DonationItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DonationItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.DonationItemsForm.executor": "Run",
+    "Application.IssueDonationsForm.executor": "Run",
     "Application.MainDashboard.executor": "Run",
     "Application.ManageDonorsForm.executor": "Run",
     "Application.ManageStudentsForm.executor": "Run",
@@ -81,9 +84,16 @@
       <recent name="C:\Users\edwar\IdeaProjects\Donations Management System\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DonationItemsForm">
+  <component name="RunManager" selected="Application.IssueDonationsForm">
     <configuration name="DonationItemsForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DonationItemsForm" />
+      <module name="Donations Management System" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IssueDonationsForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IssueDonationsForm" />
       <module name="Donations Management System" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IssueDonationsForm" />
         <item itemvalue="Application.DonationItemsForm" />
         <item itemvalue="Application.MainDashboard" />
         <item itemvalue="Application.ManageStudentsForm" />
@@ -154,7 +165,7 @@
       <workItem from="1726490961715" duration="3392000" />
       <workItem from="1726510413054" duration="5521000" />
       <workItem from="1726734244591" duration="2314000" />
-      <workItem from="1726736660056" duration="5375000" />
+      <workItem from="1726736660056" duration="11161000" />
     </task>
     <task id="LOCAL-00001" summary="Created database and tables for the system">
       <option name="closed" value="true" />

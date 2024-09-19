@@ -52,6 +52,15 @@ public class DatabaseManager {
                 + "FOREIGN KEY(donation_id) REFERENCES donations(id)"
                 + ");";
 
+        String createIssuedItemstable = "CREATE TABLE IF NOT EXISTS issued_items ("
+                + "issue_id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "item_id INTEGER,"
+                + "student_id INTEGER,"
+                + "issued_date DATE,"
+                + "quantity_issued INTEGER,"
+                + "FOREIGN KEY(student_id) REFERENCES students(id)"
+                +");";
+
         try (Connection conn = connect();
              PreparedStatement stmt1 = conn.prepareStatement(createDonorsTable);
 //             PreparedStatement stmt2 = conn.prepareStatement(createSchoolsTable);

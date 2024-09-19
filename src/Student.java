@@ -23,4 +23,10 @@ public class Student {
 
     public String getCourse() { return course; }
     public void setCourse(String course) { this.course = course; }
+
+// Representing the students in a combo box.
+    @Override
+    public String toString() {
+        return name + " (" + admno + ")";
+    }
 }

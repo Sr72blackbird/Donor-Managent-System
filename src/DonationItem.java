@@ -29,4 +29,11 @@ public class DonationItem {
 
     public String getDonationDate() { return donationDate; }
     public void setDonationDate(String donationDate) { this.donationDate = donationDate; }
-}
+
+    @Override
+    public String toString() {
+        return itemName + " (Available: " + quantity + ")";
+    }
+
+    }
+
