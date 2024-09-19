@@ -16,4 +16,10 @@ public class Donor {
     public String getName() { return name; }
     public String getEmail() { return email; }
     public String getPhone() { return phone; }
+
+// Override toString to display the donor's name in the JComboBox
+@Override
+public String toString() {
+    return name;  // We want the combo box to display the donor's name
+}
 }
