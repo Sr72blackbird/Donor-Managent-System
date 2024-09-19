@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DonationItemsForm extends JFrame {
-    private JTextField itemNameField, quantityField, donorIdField, studentIdField, donationDateField;
+    private JTextField itemNameField, quantityField, donorIdField, donationDateField;
     private JButton addButton, updateButton, deleteButton, viewButton;
     private JTable donationItemsTable;
     private DefaultTableModel tableModel;
@@ -22,11 +22,10 @@ public class DonationItemsForm extends JFrame {
         itemNameField = new JTextField(20);
         quantityField = new JTextField(10);
         donorIdField = new JTextField(10);
-        studentIdField = new JTextField(10);
         donationDateField = new JTextField(10);
 
         // Setup JTable
-        String[] columnNames = {"Item ID", "Item Name", "Quantity", "Donor ID", "Student ID", "Donation Date"};
+        String[] columnNames = {"Item ID", "Item Name", "Quantity", "Donor ID",  "Donation Date"};
         tableModel = new DefaultTableModel(columnNames, 0);
         donationItemsTable = new JTable(tableModel);
         JScrollPane scrollPane = new JScrollPane(donationItemsTable);
@@ -45,8 +44,6 @@ public class DonationItemsForm extends JFrame {
         inputPanel.add(quantityField);
         inputPanel.add(new JLabel("Donor ID:"));
         inputPanel.add(donorIdField);
-        inputPanel.add(new JLabel("Student ID:"));
-        inputPanel.add(studentIdField);
         inputPanel.add(new JLabel("Donation Date:"));
         inputPanel.add(donationDateField);
 
@@ -77,9 +74,8 @@ public class DonationItemsForm extends JFrame {
                 String itemName = itemNameField.getText();
                 int quantity = Integer.parseInt(quantityField.getText());
                 int donorId = Integer.parseInt(donorIdField.getText());
-                int studentId = Integer.parseInt(studentIdField.getText());
                 String donationDate = donationDateField.getText();
-                addDonationItem(itemName, quantity, donorId, studentId, donationDate);
+                addDonationItem(itemName, quantity, donorId ,donationDate);
             }
         });
 
@@ -91,9 +87,8 @@ public class DonationItemsForm extends JFrame {
                     String itemName = itemNameField.getText();
                     int quantity = Integer.parseInt(quantityField.getText());
                     int donorId = Integer.parseInt(donorIdField.getText());
-                    int studentId = Integer.parseInt(studentIdField.getText());
                     String donationDate = donationDateField.getText();
-                    updateDonationItem(itemId, itemName, quantity, donorId, studentId, donationDate);
+                    updateDonationItem(itemId, itemName, quantity, donorId, donationDate);
                 }
             }
         });
@@ -114,7 +109,6 @@ public class DonationItemsForm extends JFrame {
                 itemNameField.setText(donationItemsTable.getValueAt(selectedRow, 1).toString());
                 quantityField.setText(donationItemsTable.getValueAt(selectedRow, 2).toString());
                 donorIdField.setText(donationItemsTable.getValueAt(selectedRow, 3).toString());
-                studentIdField.setText(donationItemsTable.getValueAt(selectedRow, 4).toString());
                 donationDateField.setText(donationItemsTable.getValueAt(selectedRow, 5).toString());
             }
         });
@@ -136,7 +130,6 @@ public class DonationItemsForm extends JFrame {
                     item.getItemName(),
                     item.getQuantity(),
                     item.getDonorId(),
-                    item.getStudentId(),
                     item.getDonationDate()
             };
             tableModel.addRow(rowData);
@@ -145,8 +138,8 @@ public class DonationItemsForm extends JFrame {
 
 
     // Method to Add a new Donation item
-    public void addDonationItem(String itemName, int quantity, int donorId, int studentId, String donationDate) {
-        String sql = "INSERT INTO donation_items(item_name, quantity, donor_id, student_id, donation_date) VALUES(?, ?, ?, ?, ?)";
+    public void addDonationItem(String itemName, int quantity, int donorId,  String donationDate) {
+        String sql = "INSERT INTO donation_items(item_name, quantity, donor_id, donation_date) VALUES(?, ?, ?, ?, ?)";
 
         try (Connection conn = DatabaseManager.connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -154,7 +147,6 @@ public class DonationItemsForm extends JFrame {
             pstmt.setString(1, itemName);
             pstmt.setInt(2, quantity);
             pstmt.setInt(3, donorId);
-            pstmt.setInt(4, studentId);
             pstmt.setString(5, donationDate);
 
             pstmt.executeUpdate();
@@ -167,7 +159,7 @@ public class DonationItemsForm extends JFrame {
     // Method to view all Donation items
     public List<DonationItem> getDonationItems() {
         List<DonationItem> items = new ArrayList<>();
-        String sql = "SELECT item_id, item_name, quantity, donor_id, student_id, donation_date FROM donation_items";
+        String sql = "SELECT item_id, item_name, quantity, donor_id, donation_date FROM donation_items";
 
         try (Connection conn = DatabaseManager.connect();
              Statement stmt = conn.createStatement();
@@ -178,10 +170,9 @@ public class DonationItemsForm extends JFrame {
                 String itemName = rs.getString("item_name");
                 int quantity = rs.getInt("quantity");
                 int donorId = rs.getInt("donor_id");
-                int studentId = rs.getInt("student_id");
                 String donationDate = rs.getString("donation_date");
 
-                items.add(new DonationItem(itemId, itemName, quantity, donorId, studentId, donationDate));
+                items.add(new DonationItem(itemId, itemName, quantity, donorId, donationDate));
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
@@ -191,8 +182,8 @@ public class DonationItemsForm extends JFrame {
     }
 
     // Update Donation Item
-    public void updateDonationItem(int itemId, String itemName, int quantity, int donorId, int studentId, String donationDate) {
-        String sql = "UPDATE donation_items SET item_name = ?, quantity = ?, donor_id = ?, student_id = ?, donation_date = ? WHERE item_id = ?";
+    public void updateDonationItem(int itemId, String itemName, int quantity, int donorId, String donationDate) {
+        String sql = "UPDATE donation_items SET item_name = ?, quantity = ?, donor_id = ?,  donation_date = ? WHERE item_id = ?";
 
         try (Connection conn = DatabaseManager.connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -200,7 +191,6 @@ public class DonationItemsForm extends JFrame {
             pstmt.setString(1, itemName);
             pstmt.setInt(2, quantity);
             pstmt.setInt(3, donorId);
-            pstmt.setInt(4, studentId);
             pstmt.setString(5, donationDate);
             pstmt.setInt(6, itemId);
 

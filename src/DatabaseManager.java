@@ -51,12 +51,10 @@ public class DatabaseManager {
         String createDonationItemsTable = "CREATE TABLE IF NOT EXISTS donation_items ("
                 + "item_id INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + "donation_id INTEGER,"
-                + "student_id integer,"
                 + "item_name TEXT NOT NULL,"
                 + "quantity INTEGER NOT NULL,"
                 + "donation_date TEXT,"
-                + "FOREIGN KEY(donation_id) REFERENCES donations(id),"
-                + "FOREIGN KEY(student_id) REFERENCES students(id)"
+                + "FOREIGN KEY(donation_id) REFERENCES donations(id)"
                 + ");";
 
         try (Connection conn = connect();
