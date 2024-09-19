@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="088f7ac6-eb73-4549-9570-7ef843969c46" name="Changes" comment="Modified ManageDonationsForm.java&#10;Created Dummy CLasses for other UI items to anable MainDashboard.java to run">
-      <change afterPath="$PROJECT_DIR$/src/IssuedItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fa5da79-414b-47c5-bafb-81774359601b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4fa5da79-414b-47c5-bafb-81774359601b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SplashScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/splashscreen.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DonationDB.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/DonationDB.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DonationItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DonationItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slf4j-api-1.7.35.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DonationItemsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DonationItemsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IssueDonationsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IssueDonationsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ManageDonorsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageDonorsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ManageStudentsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageStudentsForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +54,21 @@
     "Application.MainDashboard.executor": "Run",
     "Application.ManageDonorsForm.executor": "Run",
     "Application.ManageStudentsForm.executor": "Run",
+    "Application.SplashScreen.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/edwar/IdeaProjects/Donations Management System/sqlite-jdbc-3.15.1.jar",
+    "last_opened_file_path": "C:/Users/edwar/IdeaProjects/Donations Management System/src/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/edwar/IdeaProjects/Donations Management System/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -80,11 +84,14 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\edwar\IdeaProjects\Donations Management System\src\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\edwar\IdeaProjects\Donations Management System\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IssueDonationsForm">
+  <component name="RunManager" selected="Application.SplashScreen">
     <configuration name="DonationItemsForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DonationItemsForm" />
       <module name="Donations Management System" />
@@ -106,13 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManageDonorsForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ManageDonorsForm" />
-      <module name="Donations Management System" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ManageStudentsForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ManageStudentsForm" />
       <module name="Donations Management System" />
@@ -120,13 +120,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SplashScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SplashScreen" />
+      <module name="Donations Management System" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IssueDonationsForm" />
-        <item itemvalue="Application.DonationItemsForm" />
+        <item itemvalue="Application.SplashScreen" />
         <item itemvalue="Application.MainDashboard" />
+        <item itemvalue="Application.DonationItemsForm" />
+        <item itemvalue="Application.IssueDonationsForm" />
         <item itemvalue="Application.ManageStudentsForm" />
-        <item itemvalue="Application.ManageDonorsForm" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +172,7 @@
       <workItem from="1726490961715" duration="3392000" />
       <workItem from="1726510413054" duration="5521000" />
       <workItem from="1726734244591" duration="2314000" />
-      <workItem from="1726736660056" duration="11161000" />
+      <workItem from="1726736660056" duration="18428000" />
     </task>
     <task id="LOCAL-00001" summary="Created database and tables for the system">
       <option name="closed" value="true" />
@@ -268,19 +275,23 @@
           <line>6</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DatabaseManager.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ManageStudentsForm.java</url>
-          <line>216</line>
+          <line>217</line>
           <properties class="ManageStudentsForm" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/MainDashboard.java</url>
+          <line>62</line>
+          <properties class="MainDashboard" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

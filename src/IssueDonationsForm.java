@@ -19,7 +19,8 @@ public class IssueDonationsForm extends JFrame {
 
     public IssueDonationsForm() {
         setTitle("Issue Donation Items to Students");
-        setSize(800, 600);
+        setSize(1300, 900);
+        setMinimumSize(new Dimension(800, 600));  // minimum size
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         // Combo boxes for selecting donation items and students

@@ -15,7 +15,8 @@ public class ManageStudentsForm extends JFrame {
 
     public ManageStudentsForm() {
         setTitle("Manage Students");
-        setSize(600, 400);
+        setSize(1300, 900);
+        setMinimumSize(new Dimension(800, 600));  // minimum size
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         // Input fields for student information

@@ -16,7 +16,8 @@ public class DonationItemsForm extends JFrame {
 
     public DonationItemsForm() {
         setTitle("Manage Donation Items");
-        setSize(800, 500);
+        setSize(1300, 900);
+        setMinimumSize(new Dimension(800, 600));  // Optionally, set a minimum size
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         // Input fields for donation item details

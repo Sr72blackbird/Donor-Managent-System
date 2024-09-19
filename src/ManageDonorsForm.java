@@ -14,7 +14,8 @@ public class ManageDonorsForm extends JFrame {
 
     public ManageDonorsForm() {
         setTitle("Manage Donors");
-        setSize(600, 400);
+        setSize(1300, 900);
+        setMinimumSize(new Dimension(800, 600));  // minimum size
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         // Text fields for donor information
